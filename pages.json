@@ -1,0 +1,76 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"placeholder": "搜索帖子",
+							"backgroundColor": "f5f4f2",
+							"borderRadius": "5rpx",
+							"disabled": true
+						},
+						"buttons": [{
+							"float": "right",
+							"color": "#333",
+							"colorPressed": "#bbb",
+							"fontSize": "20px",
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue668"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/Themess/Themess",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/My/My",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "社区",
+			"iconPath": "./static/首页 (1).png",
+			"selectedIconPath": "./static/首页.png"
+		}, {
+			"pagePath": "pages/list/list",
+			"text": "动态",
+			"iconPath": "./static/动态管理 (1).png",
+			"selectedIconPath": "./static/动态管理.png"
+		}, {
+			"pagePath": "pages/Themess/Themess",
+			"text": "消息",
+			"iconPath": "./static/消息 (1).png",
+			"selectedIconPath": "./static/消息.png"
+		}, {
+			"pagePath": "pages/My/My",
+			"text": "我的",
+			"iconPath": "./static/我的.png",
+			"selectedIconPath": "./static/我的 (1).png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "社区交友",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
